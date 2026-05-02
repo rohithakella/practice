@@ -3,11 +3,18 @@ name = "practice"
 version = "0.1.0"
 description = "A basic Python practice project"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "pyiceberg[s3fs,sql-sqlite]",
+    "pyarrow",
+    "pandas",
+    "boto3",
+    "requests",
+    "tqdm",
+]
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
+    "pytest","pyspark"
 ]
 
 [build-system]
