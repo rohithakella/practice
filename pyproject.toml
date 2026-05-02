@@ -1,0 +1,15 @@
+[project]
+name = "practice"
+version = "0.1.0"
+description = "A basic Python practice project"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
